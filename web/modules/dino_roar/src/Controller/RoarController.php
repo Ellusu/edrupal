@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 class RoarController extends ControllerBase
 {
     /**
-     * @var RoarGenerator
+     * @var RoarGenerator 
      */
     private $roarGenerator;
     /**
