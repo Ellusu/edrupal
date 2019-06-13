@@ -1,0 +1,20 @@
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.post
+  module:
+    - text
+id: node.post.title
+field_name: title
+entity_type: node
+bundle: post
+label: 'Post Detail'
+description: 'More specific information about the post.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,6 @@
+name: Post Detail
+type: module
+description: 'Adds Post content type.'
+core: 8.x
+dependencies:
+  - node

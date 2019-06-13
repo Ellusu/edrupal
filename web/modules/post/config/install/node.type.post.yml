@@ -1,0 +1,13 @@
+langcode: it
+status: true
+dependencies:
+  enforced:
+    module:
+      - post
+name: 'Post Detail'
+type: post_detail
+description: 'Content type that can be used to add <em>Post information</em> page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
