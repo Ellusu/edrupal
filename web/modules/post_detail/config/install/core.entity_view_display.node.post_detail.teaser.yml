@@ -3,15 +3,14 @@ status: true
 dependencies:
     config:
         - core.entity_view_mode.node.teaser
-        - field.field.node.post.title
-        - field.field.node.post.body
-        - node.type.post
+        - field.field.node.post_detail.body
+        - node.type.post_detail
     module:
         - text
         - user
-id: node.post.teaser
+id: node.post_detail.teaser
 targetEntityType: node
-bundle: post
+bundle: post_detail
 mode: teaser
 content:
     body:

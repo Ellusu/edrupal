@@ -2,13 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.post
+    - field.storage.node.body
+    - node.type.post_detail
   module:
     - text
-id: node.post.title
-field_name: title
+id: node.post_detail.body
+field_name: body
 entity_type: node
-bundle: post
+bundle: post_detail
 label: 'Post Detail'
 description: 'More specific information about the post.'
 required: false
