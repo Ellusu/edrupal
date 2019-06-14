@@ -40,8 +40,15 @@ class RoarController extends ControllerBase
             ->debug($roar);
         
         return [
-            '#theme' => 'pagina_3',
-            '#test_var' => $this->t('Test Value'),
+            '#theme' => 'pagina_2',
+            '#test_var' => $this->t('Test Value')/*,
+            '#attached' => [
+                'library' => 'dino_roar/dino_roar.roar',
+                'drupalSettings' => [
+                    'dino_roar' => [],
+                    'dino_roar.roar' => [],
+                ],
+            ]*/
           ];
         //return new Response($roar);
     }

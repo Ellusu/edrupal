@@ -6,8 +6,19 @@
 function dino_roar_theme() {
 
   return [
+    'pagina_2' => [
+      'variables' => ['test_var' => NULL],
+    ],
     'pagina_3' => [
       'variables' => ['test_var' => NULL],
     ],
   ];
+}
+
+function dino_roar_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'dino_roar/dino_roar.roar';
+}
+
+function dino_roar_preprocess_html(&$variables) {
+    $variables['#attached']['library'][] = 'dino_roar/dino_roar.roar';
 }

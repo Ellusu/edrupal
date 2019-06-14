@@ -1,0 +1,7 @@
+dino_roar.roar:
+  version: 1.0
+  js:
+    js/dino_roar.js: {}
+  css:
+    theme:
+      css/dino_roar.css: {}
