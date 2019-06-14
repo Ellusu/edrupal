@@ -39,10 +39,10 @@ class RoarController extends ControllerBase
         $this->loggerFactory->get('default')
             ->debug($roar);
         
-        return array(
-            '#title' => 'Websolutions Agency',
-            '#description' => 'Websolutions Agency is the industry leading Drupal development agency in Croatia'
-          );
+        return [
+            '#theme' => 'pagina_3',
+            '#test_var' => $this->t('Test Value'),
+          ];
         //return new Response($roar);
     }
 }

@@ -4,11 +4,10 @@
  * Implementing hook_theme().
  */
 function dino_roar_theme() {
-    die;
-  return array(
-   'ws_custom_block' => array(
-            'variables' => array('title' => NULL, 'description' => NULL),
-            'template' => 'pagina_3',
-        ),
-  );
+
+  return [
+    'pagina_3' => [
+      'variables' => ['test_var' => NULL],
+    ],
+  ];
 }
