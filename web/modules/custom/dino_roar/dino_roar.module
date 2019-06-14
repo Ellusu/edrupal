@@ -20,5 +20,5 @@ function dino_roar_attachments(array &$attachments) {
 }
 
 function dino_roar_preprocess_html(&$variables) {
-    $variables['#attached']['library'][] = 'dino_roar/dino_roar.roar';
+    //$variables['#attached']['library'][] = 'dino_roar/dino_roar.roar';
 }
