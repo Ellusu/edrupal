@@ -5,14 +5,12 @@
 * $variables contains all variables used for the template.
 * $hook should be 'page' in this case.
 **/
-function post_detail_preprocess_page(&amp;$variables, $hook) {
+function post_detail_preprocess_page(&$variables, $hook) {
   // Rendering a table inside the template
   // Using a render array is the best practice here - Twigg will render it correctly.
-  $variables['table'] = array(
-    '#theme' => 'table',
-    '#header' => $header,
-    '#rows' => $rows,
-  );
+    
+  echo "preproces alert 5";
+  die;
   //Add a JS library
 }
 
@@ -22,7 +20,7 @@ function post_detail_preprocess_page(&amp;$variables, $hook) {
 * 'page' in this case.
 **/
 
-function post_detail_theme_suggestions_page_alter(array &amp;$suggestions, array $variables) {
+function post_detail_theme_suggestions_page_alter(array &$suggestions, array $variables) {
   // Add a new suggestion for a page template
   // This allows us to use a template name page--lotus.tpl.php
   $suggestions[] =  'page__post_detail';
