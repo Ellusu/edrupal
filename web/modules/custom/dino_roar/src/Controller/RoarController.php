@@ -41,7 +41,7 @@ class RoarController extends ControllerBase
         
         return [
             '#theme' => 'pagina_2',
-            '#test_var' => $this->t('Test Value')/*,
+            '#test_var' => $this->t($roar)/*,
             '#attached' => [
                 'library' => 'dino_roar/dino_roar.roar',
                 'drupalSettings' => [
